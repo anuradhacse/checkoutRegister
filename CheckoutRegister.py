@@ -1,7 +1,6 @@
 from product import Product
 
 bar_code = 0
-amount_payed = 0
 balance = 0
 shopping_cart = []
 
@@ -38,6 +37,15 @@ def calculate_total(shopping_cart):
         total += product.price
     return total
 
+def print_final_receipt(shopping_cart, total_cost, paid_amount, balance):
+    for product in shopping_cart:
+        print product.name + " - " + product.weight + "            $" + str(product.price)
+
+    print "Total amount due : $" + str(total_cost)
+    print "Amount Received : $" + str(paid_amount)
+    print "Change given : $" + str(balance)
+
+
 def start_programme():
     print "----- Welcome to FedUni checkout! -----"
     while True:
@@ -54,7 +62,6 @@ def start_programme():
         if proceed == "N" or proceed == "n" or proceed == "No" :
             total = calculate_total(shopping_cart)
             print "Payment due: $" + str(total)
-            global amount_payed
             amount_payed = 0
             balance = 0
             while amount_payed != total:
@@ -73,17 +80,16 @@ def start_programme():
                     balance = amount_payed - total
                     break
 
-            print "Balance: " + str(balance)
+            print_final_receipt(shopping_cart, total, amount_payed, balance)
 
             print "Thank you for shopping at FedUni!"
             next_customer = raw_input("(N)ext customer, or (Q)uit? ")
             if next_customer == "q" or next_customer == "quit":
                 break
-            #reset values for next customer //todo this reset doesnt work fix it
-            global amount_payed
-            amount_payed = 0
-            balance = 0
-            total = 0
+
+            #empty the shopping cart
+            shopping_cart = []
+
 
 
 available_products = get_available_products()
@@ -92,6 +98,4 @@ print print_available_products(available_products)
 
 start_programme()
 
-"""Get user input
-Calculate total
-Print Receipts"""
+
