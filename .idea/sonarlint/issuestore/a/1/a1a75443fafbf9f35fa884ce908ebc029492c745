@@ -1,12 +1,7 @@
 
-_python:PrintStatementUsageZ"-Replace print statement by built-in function.(î½è…şÿÿÿÿ8ü½Ğ™Õ,
-_python:PrintStatementUsage1"-Replace print statement by built-in function.(€’Ì×øÿÿÿÿ8Ó¦£îÕ,
-Zpython:PrintStatementUsage8"-Replace print statement by built-in function.(ÄÂ¬³8’ÈıìÕ,
-Zpython:PrintStatementUsage*"-Replace print statement by built-in function.(Ç¿‰ê8ĞÀ¹ÅÕ,
-_python:PrintStatementUsage"-Replace print statement by built-in function.(İúáÒøÿÿÿÿ8›ˆ¿™Õ,
-Ypython:PrintStatementUsage["-Replace print statement by built-in function.(æ¸ğ8¢•Á™Õ,
-Ypython:PrintStatementUsage?"-Replace print statement by built-in function.(×Å}8ª­íÕ,
-Ypython:PrintStatementUsageN"-Replace print statement by built-in function.(Á½Ğ 8—ÔåìÕ,
-spython:S3776)"TRefactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.(Òúãá8ê´èíÕ,
-Ypython:PrintStatementUsageL"-Replace print statement by built-in function.(Ïˆã=8ÂÓ—íÕ,
-_python:PrintStatementUsage!"-Replace print statement by built-in function.(ÇÂ»¥ùÿÿÿÿ8çÿ¥ÄÕ,
+Wpython:PrintStatementUsage"-Replace print statement by built-in function.(Á½Ğ 8—ÔåìÕ,
+Xpython:PrintStatementUsage"-Replace print statement by built-in function.(ÄÂ¬³8’ÈıìÕ,
+]python:PrintStatementUsage"-Replace print statement by built-in function.(€’Ì×øÿÿÿÿ8Ó¦£îÕ,
+Wpython:PrintStatementUsage"-Replace print statement by built-in function.(×Å}8ª­íÕ,
+qpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.(Òúãá8ê´èíÕ,
+@python:S125"Remove this commented out code.(»î€ëşÿÿÿÿ8Óõ©Î×,
